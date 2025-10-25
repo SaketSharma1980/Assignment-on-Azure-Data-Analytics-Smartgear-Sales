@@ -18,6 +18,35 @@ This project integrates multiple Azure services:
 4. Query curated data using Synapse serverless SQL.  
 5. Deliver a seamless, repeatable data workflow ready for enterprise scaling.
 
+## Azure Architecture
++-------------------------------+
+| Azure Data Factory (ADF) |
+| - Automates Raw → Landing |
++---------------+---------------+
+|
+v
++-------------------------------+
+| Azure Data Lake Storage Gen2 |
+| - Raw | Landing | Curated |
++---------------+---------------+
+|
+v
++-------------------------------+
+| Azure Databricks |
+| - ETL, Cleaning, Aggregation |
++---------------+---------------+
+|
+v
++-------------------------------+
+| Azure Synapse Analytics |
+| - Ad-hoc SQL Queries |
++---------------+---------------+
+|
+v
++-------------------------------+
+| Power BI |
+| - Visualization & Insights |
++-------------------------------+
 
 ## Tasks Summary
 
